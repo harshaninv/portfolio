@@ -1,5 +1,6 @@
 "use client";
 import { useState, useRef, useEffect, FormEvent } from "react";
+import { Send, Mail } from "lucide-react";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 
 export default function Contact() {
@@ -115,19 +116,7 @@ export default function Contact() {
             <div>
               <button type="submit" className="hv-btn hv-btn-primary">
                 <span>Say Hello</span>
-                <svg
-                  width={16}
-                  height={16}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  style={{ position: "relative", zIndex: 1 }}
-                >
-                  <path d="M22 2 11 13M22 2 15 22l-4-9-9-4 20-7Z" />
-                </svg>
+                <Send size={16} strokeWidth={2} style={{ position: "relative", zIndex: 1 }} />
               </button>
             </div>
           </form>
@@ -149,19 +138,7 @@ export default function Contact() {
             className="hv-btn hv-btn-secondary"
           >
             <span>harshanineranjana@gmail.com</span>
-            <svg
-              width={15}
-              height={15}
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={{ position: "relative", zIndex: 1 }}
-            >
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Zm0 0 8 8 8-8" />
-            </svg>
+            <Mail size={15} strokeWidth={2} style={{ position: "relative", zIndex: 1 }} />
           </a>
         </div>
       </div>

@@ -1,11 +1,12 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { ArrowRight } from "lucide-react";
 import { gsap } from "@/lib/gsap";
 
 function splitToChars(text: string) {
   return text.split("").map((char, i) => (
     <span key={i} className="char" aria-hidden="true">
-      {char === " " ? "\u00A0" : char}
+      {char === " " ? " " : char}
     </span>
   ));
 }
@@ -100,7 +101,7 @@ export default function Hero() {
         <a href="https://en.wikipedia.org/wiki/Colombo" target="_blank" rel="noopener noreferrer">
           Colombo, Sri Lanka
         </a>
-        , with 1.5+ years of experience working on real-world projects using React, Next.js, Laravel, and Flutter. I’m passionate about building efficient, scalable systems and continuously learning new technologies to improve my craft.
+        , with 1.5+ years of experience working on real-world projects using React, Next.js, Laravel, and Flutter. I&rsquo;m passionate about building efficient, scalable systems and continuously learning new technologies to improve my craft.
       </p>
 
       <div
@@ -113,9 +114,7 @@ export default function Hero() {
           onClick={() => scrollTo("work")}
         >
           <span>Check out my work</span>
-          <svg width={16} height={16} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ position: "relative", zIndex: 1 }}>
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
+          <ArrowRight size={16} strokeWidth={2} style={{ position: "relative", zIndex: 1 }} />
         </button>
       </div>
     </section>

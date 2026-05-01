@@ -1,20 +1,11 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { ExternalLink, Folder } from "lucide-react";
 import { gsap, ScrollTrigger } from "@/lib/gsap";
 
-const GithubIcon = ({ size = 18 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+const GitHubIcon = ({ size = 18 }: { size?: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 6.77 5.07 5.07 0 0 0 19.91 3S18.73 2.65 16 4.55a13.38 13.38 0 0 0-7 0C6.27 2.65 5.09 3 5.09 3A5.07 5.07 0 0 0 5 6.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 20.13V24" />
-  </svg>
-);
-const ExternalIcon = ({ size = 18 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
-  </svg>
-);
-const FolderIcon = ({ size = 36 }: { size?: number }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z" />
   </svg>
 );
 
@@ -133,10 +124,10 @@ function FeaturedProject({
         </ul>
         <div className="hv-feat-links">
           <a href="#" onClick={(e) => e.preventDefault()} aria-label="GitHub">
-            <GithubIcon size={20} />
+            <GitHubIcon size={20} />
           </a>
           <a href="#" onClick={(e) => e.preventDefault()} aria-label="Live site">
-            <ExternalIcon size={20} />
+            <ExternalLink size={20} strokeWidth={1.5} />
           </a>
         </div>
       </div>
@@ -217,7 +208,7 @@ export default function Work() {
 
       <div className="hv-other-head">
         <h3 className="hv-other-title">Other Noteworthy Projects</h3>
-        <a href="https://github.com/harshani" target="_blank" rel="noopener noreferrer" className="hv-other-link">
+        <a href="https://github.com/harshaninv" target="_blank" rel="noopener noreferrer" className="hv-other-link">
           view on GitHub
         </a>
       </div>
@@ -227,14 +218,14 @@ export default function Work() {
           <article key={p.title} className="hv-proj">
             <div className="hv-proj-top">
               <span className="hv-proj-folder">
-                <FolderIcon size={34} />
+                <Folder size={34} strokeWidth={1.5} />
               </span>
               <div className="hv-proj-links">
                 <a href="#" onClick={(e) => e.preventDefault()} aria-label="GitHub">
-                  <GithubIcon size={18} />
+                  <GitHubIcon size={18} />
                 </a>
                 <a href="#" onClick={(e) => e.preventDefault()} aria-label="Live site">
-                  <ExternalIcon size={18} />
+                  <ExternalLink size={18} strokeWidth={1.5} />
                 </a>
               </div>
             </div>
