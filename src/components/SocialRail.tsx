@@ -14,44 +14,51 @@ const LinkedInIcon = () => (
   </svg>
 );
 
+const socials = [
+  { href: "https://github.com/harshaninv", label: "GitHub", icon: <GitHubIcon /> },
+  { href: "https://linkedin.com/in/harshani-vitharana", label: "LinkedIn", icon: <LinkedInIcon /> },
+];
+
 export default function SocialRail() {
   const railRef = useRef<HTMLDivElement>(null);
+  const lineRef = useRef<HTMLDivElement>(null);
+  const linkRefs = useRef<(HTMLAnchorElement | null)[]>([]);
 
   useEffect(() => {
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ delay: 1.6 });
-      tl.to(railRef.current, { opacity: 1, duration: 0.01 })
-        .from(".hv-rail-left a", {
-          opacity: 0,
-          y: 20,
-          stagger: 0.1,
-          duration: 0.6,
-          ease: "power3.out",
-        })
-        .from(".hv-rail-left .hv-rail-line", {
-          scaleY: 0,
-          transformOrigin: "top",
-          duration: 0.6,
-          ease: "power3.out",
-        }, "-=0.2");
-    }, railRef);
+    const tl = gsap.timeline({ delay: 1.6 });
+    tl.to(railRef.current, { opacity: 1, duration: 0.01 })
+      .from(linkRefs.current, {
+        opacity: 0,
+        y: 20,
+        stagger: 0.1,
+        duration: 0.6,
+        ease: "power3.out",
+      })
+      .from(lineRef.current, {
+        scaleY: 0,
+        transformOrigin: "top",
+        duration: 0.6,
+        ease: "power3.out",
+      }, "-=0.2");
 
-    return () => ctx.revert();
+    return () => { tl.kill(); };
   }, []);
-
-  const socials = [
-    { href: "https://github.com/harshaninv", label: "GitHub", icon: <GitHubIcon /> },
-    { href: "https://linkedin.com/in/harshani-vitharana", label: "LinkedIn", icon: <LinkedInIcon /> },
-  ];
 
   return (
     <div ref={railRef} className="hv-rail hv-rail-left">
-      {socials.map(({ href, label, icon }) => (
-        <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
+      {socials.map(({ href, label, icon }, i) => (
+        <a
+          key={label}
+          ref={(el) => { linkRefs.current[i] = el; }}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={label}
+        >
           {icon}
         </a>
       ))}
-      <div className="hv-rail-line" />
+      <div ref={lineRef} className="hv-rail-line" />
     </div>
   );
 }
