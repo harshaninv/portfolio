@@ -78,18 +78,18 @@ export default function Hero() {
       <h1
         ref={nameRef}
         className="hv-hero-name"
-        aria-label="Harshani Vitharana."
+        aria-label="Harshani Neranjana."
       >
-        {splitToChars("Harshani Vitharana.")}
+        {splitToChars("Harshani Neranjana.")}
       </h1>
 
-      <h1
+      <p
         ref={taglineRef}
         className="hv-hero-tagline"
         style={{ opacity: 0, transform: "translateY(20px)" }}
       >
-        I build things for the web.
-      </h1>
+        I build full-stack web and mobile applications.
+      </p>
 
       <p
         ref={bodyRef}
@@ -100,12 +100,7 @@ export default function Hero() {
         <a href="https://en.wikipedia.org/wiki/Colombo" target="_blank" rel="noopener noreferrer">
           Colombo, Sri Lanka
         </a>
-        , focused on building accessible, performant products at the intersection of design and
-        engineering. Currently building scalable web applications at{" "}
-        <a href="https://avya.lk" target="_blank" rel="noopener noreferrer">
-          Avya Technologies
-        </a>
-        , where I contribute to projects like the DIRAS Election Monitoring System.
+        , with 1.5+ years of experience working on real-world projects using React, Next.js, Laravel, and Flutter. I’m passionate about building efficient, scalable systems and continuously learning new technologies to improve my craft.
       </p>
 
       <div
