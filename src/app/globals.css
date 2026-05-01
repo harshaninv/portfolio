@@ -299,7 +299,7 @@ main { max-width: 1000px; margin: 0 auto; padding: 0 48px; }
   transform-style: preserve-3d;
 }
 .hv-hero-tagline {
-  font-size: var(--fs-hero);
+  font-size: clamp(18px, 3vw, 28px);
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.03em;

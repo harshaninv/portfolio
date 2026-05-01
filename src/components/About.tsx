@@ -4,7 +4,7 @@ import { gsap, ScrollTrigger } from "@/lib/gsap";
 
 const skills = [
   "JavaScript (ES6+)",
-  "PHP / Laravel",
+  "PHP / Laravel / FastAPI",
   "React.js / Next.js",
   "Flutter / Dart",
   "Node.js",
@@ -69,33 +69,73 @@ export default function About() {
       <div className="hv-about-grid">
         <div ref={copyRef} className="hv-about-copy">
           <p>
-            Hello! I&rsquo;m Harshani — a motivated and detail-oriented Full Stack Developer
-            with hands-on experience building production web applications. My journey into
-            programming started with curiosity and turned into a passion for crafting things
-            that live on the internet.
+            My journey into software development started after my Advanced Level studies,
+            when I was selected to{" "}<a href="https://www.sab.ac.lk" target="_blank" rel="noopener noreferrer">
+              Sabaragamuwa University of Sri Lanka
+            </a>{" "}to pursue a BSc.
+            (Hons) in Computing and Information Systems, a four-year degree program.
           </p>
+
           <p>
-            I have experience working across the full stack — from designing{" "}
+            During my university years, I built a strong foundation in software engineering
+            through subjects such as Object-Oriented Programming, Algorithms, and programming
+            languages including C, Java, and JavaScript. I also gained experience with databases
+            like MySQL and MongoDB, while working on team-based projects using tools such as{" "}
+            <a href="https://github.com/harshaninv" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+            ,{" "}
+            <a href="https://www.atlassian.com/software/jira" target="_blank" rel="noopener noreferrer">
+              Jira,
+            </a>{" "}
+            and{" "}
             <a href="https://www.figma.com" target="_blank" rel="noopener noreferrer">
               Figma
-            </a>{" "}
-            wireframes and implementing pixel-perfect UIs to architecting{" "}
+            </a>.
+          </p>
+
+          <p>
+            In my third year, I completed a six-month internship at Coderay Technologies,
+            where I worked on real-world applications using{" "}
             <a href="https://laravel.com" target="_blank" rel="noopener noreferrer">
               Laravel
             </a>{" "}
-            backends with RESTful APIs, third-party integrations, and automated tests. I
-            thrive in Agile teams and love the process of taking an idea from concept to
-            deployment.
+            and{" "}
+            <a href="https://flutter.dev" target="_blank" rel="noopener noreferrer">
+              Flutter
+            </a>{" "}. From designing Figma wireframes and implementing pixel-perfect UIs
+            to architecting Laravel backends with RESTful APIs and third-party integrations,
+            I gained practical experience working in Agile teams and delivering features from
+            concept to deployment.
           </p>
+
           <p>
-            Currently, I&rsquo;m building at{" "}
-            <a href="https://avya.lk" target="_blank" rel="noopener noreferrer">
-              Avya Technologies
-            </a>{" "}
-            where I contribute to major civic-tech and enterprise projects. I hold a BSc. Hons
-            in Computing &amp; Information Systems from Sabaragamuwa University of Sri Lanka.
+            After graduating with a GPA of 3.08 (Second Class Lower Division) in October 2025,
+            I joined Avya Technologies as an Associate Software Engineer. Currently, I work on
+            full-stack development using technologies such as Next.js, Nuxt.js, FastAPI, and AWS,
+            where I continue to improve my skills by building scalable and user-friendly applications.
           </p>
+
+          <p>
+            I also enjoy writing about what I learn in software development and sharing my experiences
+            through technical articles. You can read my blog posts on{" "}
+            <a
+              href="https://medium.com/@harshanineranjana"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Medium
+            </a>.
+          </p>
+          
+          <p>
+            I’m passionate about continuous learning and always open to new opportunities where
+            I can grow, contribute, and take on new challenges as a Software Engineer.
+          </p>
+
+
           <p>Here are a few technologies I work with daily:</p>
+
           <ul className="hv-about-skills" role="list">
             {skills.map((s) => (
               <li key={s}>{s}</li>
