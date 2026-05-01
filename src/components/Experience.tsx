@@ -33,7 +33,7 @@ const jobs = [
     ],
   },
   {
-    company: "Acedemy Projects",
+    company: "Academy Projects",
     fullName: "Independent and Team Projects",
     role: "Full Stack Developer",
     range: "2022 — 2024",
@@ -41,9 +41,9 @@ const jobs = [
     bullets: [
       "Built the List-Me smart grocery shopping app using Flutter, Node.js, and MongoDB (Team project).",
       "Developed a personal library management system (Bookstore) with React and Laravel.",
-      "Created Health Direct — a healthcare mobile app concept starting with Figma wireframes through to a React implementation, designed for the Hackholics competition.  (Team project for Hackathon).",
+      "Created Health Direct — a healthcare mobile app concept from Figma wireframes through to a React implementation, designed for the Hackholics Hackathon (Team project).",
       "Built various utility apps including a Note-App (JavaScript) and Daily Task Manager (Laravel/MySQL).",
-      "Automated Vehicle Monitoring System - Campus Security system in development using Filament (Team project).",
+      "Automated Vehicle Monitoring System — a campus security system built with Laravel and Filament (Team project).",
     ],
   },
 ];

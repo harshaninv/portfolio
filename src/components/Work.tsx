@@ -39,12 +39,12 @@ const featuredProjects = [
 const otherProjects = [
   {
     title: "Automated Vehicle Monitoring System",
-    description: "Campus security system built with Laravel and Filament to monitor vehicles, automate tracking and enhance campus security management.",
+    description: "Campus security system built with Laravel and Filament to monitor vehicles, automate tracking, and enhance campus security management.",
     stack: ["Laravel", "Filament", "MySQL"],
   },
   {
     title: "Health Direct",
-    description: "Healthcare mobile app concept designed for Hackholics competition. Started with Figma wireframes, progressed to a React mobile application for healthcare management.",
+    description: "Healthcare mobile app concept designed for the Hackholics Hackathon. Started with Figma wireframes, progressed to a React mobile application for healthcare management.",
     stack: ["React.js", "Figma", "Healthcare"],
   },
   {

@@ -95,7 +95,7 @@ export default function About() {
           </p>
 
           <p>
-            In my third year, I completed a six-month internship at Coderay Technologies,
+            In my third year, I completed a six-month internship at CodeRay Technologies,
             where I worked on real-world applications using{" "}
             <a href="https://laravel.com" target="_blank" rel="noopener noreferrer">
               Laravel
@@ -103,7 +103,7 @@ export default function About() {
             and{" "}
             <a href="https://flutter.dev" target="_blank" rel="noopener noreferrer">
               Flutter
-            </a>{" "}. From designing Figma wireframes and implementing pixel-perfect UIs
+            </a>. From designing Figma wireframes and implementing pixel-perfect UIs
             to architecting Laravel backends with RESTful APIs and third-party integrations,
             I gained practical experience working in Agile teams and delivering features from
             concept to deployment.
@@ -129,7 +129,7 @@ export default function About() {
           </p>
           
           <p>
-            I’m passionate about continuous learning and always open to new opportunities where
+            I&rsquo;m passionate about continuous learning and always open to new opportunities where
             I can grow, contribute, and take on new challenges as a Software Engineer.
           </p>
 
